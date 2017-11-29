@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <SourceFile Checksum="FD6AAEB45BDD00B795F70839869D4F44" Timestamp="1D3693802FCEEBC" xmlns="http://www.ni.com/PlatformFramework">
+=======
+<SourceFile Checksum="C3B1B96A520C3FCD94B8E7027B0B58DE" Timestamp="1D36934C70B0CF8" xmlns="http://www.ni.com/PlatformFramework">
+>>>>>>> parent of 7fcc567... Merge pull request #1 from alvinphan35/Backwards
 =======
 <SourceFile Checksum="C3B1B96A520C3FCD94B8E7027B0B58DE" Timestamp="1D36934C70B0CF8" xmlns="http://www.ni.com/PlatformFramework">
 >>>>>>> parent of 7fcc567... Merge pull request #1 from alvinphan35/Backwards
@@ -128,8 +132,11 @@
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="41" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[double]1" Label="[UIModel]42" Left="[float]660" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" TabIndex="[int]3" Top="[float]612" Value="{DataItemBinding Id=39}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="42" LabelOwner="[UIModel]41" Left="[float]660" Text="[string]Numeric_4" Top="[float]592" Width="[float]57" xmlns="http://www.ni.com/PanelCommon" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="72" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]73" Left="[float]420" MinHeight="[float]24" TabIndex="[int]4" Top="[float]372" Value="{DataItemBinding Id=70}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="73" LabelOwner="[UIModel]72" Left="[float]420" Text="[string]Numeric_5" Top="[float]352" Width="[float]57" xmlns="http://www.ni.com/PanelCommon" />
+=======
+>>>>>>> parent of 7fcc567... Merge pull request #1 from alvinphan35/Backwards
 =======
 >>>>>>> parent of 7fcc567... Merge pull request #1 from alvinphan35/Backwards
 		</NativeFrontPanel>
@@ -146,9 +153,12 @@
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="70" Name="Numeric_5" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
+=======
+>>>>>>> parent of 7fcc567... Merge pull request #1 from alvinphan35/Backwards
 =======
 >>>>>>> parent of 7fcc567... Merge pull request #1 from alvinphan35/Backwards
 	</VirtualInstrument>
