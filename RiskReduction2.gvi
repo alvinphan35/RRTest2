@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C3B1B96A520C3FCD94B8E7027B0B58DE" Timestamp="1D36934C70B0CF8" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B7AC22D9925D52BCBAB0A81841CC77AF" Timestamp="1D369371BF63FC0" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.2.0.56252" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="5.2.0.56252" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
@@ -86,6 +86,24 @@
 			<Wire Id="47" Joints="N(45:Out)|(370,680) h(75) v(-25) N(44:y)|(450,655)" xmlns="http://www.ni.com/PlatformFramework" />
 			<ForLoop Bounds="863 113 296 246" DiagramId="50" Id="49">
 				<LoopIteration Bounds="5 216 15 15" Id="52" />
+				<DataAccessor Bounds="170 135 40 15" DataItem="56" Id="57" Label="60" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="57" Bounds="215 135 60 14" Id="60" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Numeric_5</p.Text>
+				</NodeLabel>
+				<Add Bounds="110 130 30 30" Id="61" Terminals="o=66, c0t0v=64, c1t0v=65" />
+				<Literal Bounds="35 160 40 15" DataType="Int32" Id="62" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Numeric" ValueFormatter="LV:0" />
+				</Literal>
+				<Literal Bounds="30 120 40 15" DataType="Int32" Id="63" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Numeric" ValueFormatter="LV:0" />
+				</Literal>
+				<Wire Id="64" Joints="N(63:Out)|(70,125) h(5) v(10) N(61:c0t0v)|(110,135)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="65" Joints="N(62:Out)|(75,165) h(30) v(-15) N(61:c1t0v)|(110,150)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="66" Joints="N(61:o)|(140,145) h(25) v(-5) N(57:Value)|(173,140)" xmlns="http://www.ni.com/PlatformFramework" />
 				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="51" Terminals="49=55, 50" />
 			</ForLoop>
 			<Literal Bounds="794 115 40 15" DataType="Int32" Id="53" Label="54" xmlns="http://www.ni.com/MocCommon">
@@ -107,6 +125,8 @@
 			<Label Height="[float]16" Id="37" LabelOwner="[UIModel]36" Left="[float]244" Text="[string]Numeric_3" Top="[float]512" Width="[float]57" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="41" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[double]1" Label="[UIModel]42" Left="[float]660" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" TabIndex="[int]3" Top="[float]612" Value="{DataItemBinding Id=39}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="42" LabelOwner="[UIModel]41" Left="[float]660" Text="[string]Numeric_4" Top="[float]592" Width="[float]57" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="58" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Label="[UIModel]59" Left="[float]484" MinHeight="[float]24" TabIndex="[int]4" Top="[float]180" Value="{DataItemBinding Id=56}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="59" LabelOwner="[UIModel]58" Left="[float]484" Text="[string]Numeric_5" Top="[float]160" Width="[float]57" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="15" Name="Numeric" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
@@ -119,6 +139,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="39" Name="Numeric_4" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="56" Name="Numeric_5" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 </SourceFile>
